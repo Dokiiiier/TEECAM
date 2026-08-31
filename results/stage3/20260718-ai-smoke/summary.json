@@ -1,0 +1,27 @@
+{
+  "schema": "cote3-mon-stage3-summary-v1",
+  "status": "PASS",
+  "scope": "stage3-ai-pipeline-smoke",
+  "formal_dissertation_experiment": false,
+  "checks": [
+    "all configured QEMU runs passed",
+    "request and resource telemetry present",
+    "benign split by complete run with no leakage",
+    "attack data used only for testing",
+    "percentile baseline exported",
+    "100-tree Isolation Forest exported",
+    "host dependency-free runtime matches scikit-learn within tolerance",
+    "detection metrics and run-level bootstrap intervals generated"
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scikit_learn": "1.7.2"
+  },
+  "artifacts": {
+    "percentile_sha256": "3bf44acb71cdba6d3707eb3ea84cc05a943401e6b93adfbf93c66358c9b3de06",
+    "iforest_sha256": "ccaa1d1541a35e9e78067403efbb3d86d4c68c9c67846b14b19c7d65a13a8a07",
+    "features_sha256": "a7ff5133d56f567c3390aaaa9f88c2768f4532f7c8569eda8f3ce58f636af792",
+    "parity_vectors_sha256": "a7d1ecc8ea4897439a00ffdb8319dcaa62ad72df68744b4d2ad7a95853814fc1"
+  }
+}

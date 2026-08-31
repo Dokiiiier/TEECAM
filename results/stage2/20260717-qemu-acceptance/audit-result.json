@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "records": 3,
+  "model_hash": "f5e11fd570849e00a52bfa8bf0666987968ea9f692d69ffd8409c3dbb35ef444",
+  "checks": [
+    "valid",
+    "modified",
+    "deleted",
+    "reordered",
+    "forged"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "cote3-mon-percentile-v1",
+  "features": [
+    "request_rate",
+    "put_ratio",
+    "get_ratio",
+    "delete_ratio",
+    "reject_ratio",
+    "error_ratio",
+    "latency_mean_us",
+    "latency_p95_us",
+    "input_mean_bytes",
+    "input_max_bytes",
+    "cpu_percent_mean",
+    "rss_kb_mean"
+  ],
+  "centres": [
+    4.6,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    195220.40159473685,
+    237962.02584999998,
+    102.0,
+    102.0,
+    0.39610365808999926,
+    1280.0
+  ],
+  "scales": [
+    4.3999999999999995,
+    0.7891304347826087,
+    0.5688888888888894,
+    0.28,
+    1e-09,
+    0.676666666666667,
+    70306.16770408669,
+    170193.63731150003,
+    2976.0,
+    2976.0,
+    0.5928343939707474,
+    1280.0
+  ],
+  "threshold": 1.8467164654811086
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "cote3-mon-performance-experiment-v1",
+  "stage": "stage4",
+  "scope": "stage4-formal-performance-overhead",
+  "formal_dissertation_experiment": true,
+  "seed": 142,
+  "scenario": "malformed",
+  "is_attack": true,
+  "repeats_per_configuration": 10,
+  "duration_seconds": 60,
+  "warmup_seconds": 10,
+  "window_seconds": 5,
+  "model": "cote3-stage4/20260719-formal-detection/analysis/models/iforest.json",
+  "configurations": [
+    "gateway_only",
+    "telemetry",
+    "telemetry_iforest",
+    "telemetry_iforest_audit_ta"
+  ],
+  "interpretation": "Controlled worst-case alerting workload; malformed windows were all detected in the formal experiment."
+}

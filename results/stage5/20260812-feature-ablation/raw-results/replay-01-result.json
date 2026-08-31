@@ -1,0 +1,12 @@
+{
+  "schema": "cote3-mon-stage5-run-v1",
+  "status": "PASS",
+  "run_id": "replay-01",
+  "scenario": "replay",
+  "is_attack": true,
+  "seed": 43,
+  "duration_seconds": 60.0,
+  "elapsed_seconds": 61.564898335999715,
+  "request_events": 283,
+  "resource_events": 60
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cote3-mon"
+version = "0.1.0"
+description = "TEE-gateway-mediated anomaly detection and tamper-evident alerting for containerised edge workloads"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Zheng Shenchenyang"}]
+dependencies = []
+
+[project.optional-dependencies]
+ml = ["numpy>=1.26", "scikit-learn>=1.4"]
+analysis = ["matplotlib>=3.8"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+cote3-features = "cote3mon.cli:features_main"
+cote3-train = "cote3mon.cli:train_main"
+cote3-evaluate = "cote3mon.cli:evaluate_main"
+cote3-workload = "cote3mon.cli:workload_main"
+cote3-audit = "cote3mon.cli:audit_main"
+cote3-monitor = "cote3mon.cli:monitor_main"
+cote3-resource = "cote3mon.cli:resource_main"
+
+[tool.setuptools.packages.find]
+include = ["cote3mon*"]

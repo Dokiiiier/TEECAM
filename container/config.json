@@ -1,0 +1,36 @@
+{
+  "ociVersion": "1.0.2",
+  "process": {
+    "terminal": false,
+    "user": {"uid": 0, "gid": 0},
+    "args": ["/bin/cote3-workload", "steady", "--duration", "60", "--seed", "42"],
+    "env": ["PATH=/bin:/usr/bin", "COTE3_CONTAINER_ID=cote3-workload"],
+    "cwd": "/",
+    "capabilities": {
+      "bounding": [], "effective": [], "inheritable": [], "permitted": [], "ambient": []
+    },
+    "noNewPrivileges": true
+  },
+  "root": {"path": "rootfs", "readonly": true},
+  "hostname": "cote3-workload",
+  "mounts": [
+    {"destination": "/proc", "type": "proc", "source": "proc"},
+    {"destination": "/dev", "type": "tmpfs", "source": "tmpfs", "options": ["nosuid", "strictatime", "mode=755", "size=65536k"]},
+    {"destination": "/run/cote3-mon", "type": "bind", "source": "/run/cote3-mon", "options": ["rbind", "rw", "nosuid", "nodev", "noexec"]}
+  ],
+  "linux": {
+    "resources": {},
+    "namespaces": [
+      {"type": "pid"}, {"type": "ipc"}, {"type": "uts"},
+      {"type": "mount"}, {"type": "network"}
+    ],
+    "maskedPaths": [
+      "/proc/acpi", "/proc/asound", "/proc/kcore", "/proc/keys",
+      "/proc/latency_stats", "/proc/timer_list", "/proc/timer_stats",
+      "/proc/sched_debug", "/sys/firmware", "/proc/scsi"
+    ],
+    "readonlyPaths": [
+      "/proc/bus", "/proc/fs", "/proc/irq", "/proc/sys", "/proc/sysrq-trigger"
+    ]
+  }
+}

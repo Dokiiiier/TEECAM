@@ -1,0 +1,57 @@
+# Thesis, personal and generated documents
+/output/
+/tmp/
+/evidence.txt
+*.doc
+*.docx
+*.pdf
+*.odt
+*.rtf
+
+# Editors and local agent state
+/.idea/
+/.vs/
+/.vscode/
+/.codex/
+/.agents/
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+
+# Builds and bulk experiment outputs
+/build/
+/artifacts/
+*.log
+
+# Native and OP-TEE build products
+*.o
+*.a
+*.so
+*.elf
+*.map
+*.dmp
+*.ta
+*.o.cmd
+*.o.d
+*.ld.d
+optee/audit_ta/ta/dyn_list
+optee/audit_ta/ta/ta.lds
+optee/audit_ta/host/audit-client
+
+# Credentials and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx

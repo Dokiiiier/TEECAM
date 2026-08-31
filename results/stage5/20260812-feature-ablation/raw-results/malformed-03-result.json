@@ -1,0 +1,12 @@
+{
+  "schema": "cote3-mon-stage5-run-v1",
+  "status": "PASS",
+  "run_id": "malformed-03",
+  "scenario": "malformed",
+  "is_attack": true,
+  "seed": 45,
+  "duration_seconds": 60.0,
+  "elapsed_seconds": 62.09171733800031,
+  "request_events": 23157,
+  "resource_events": 60
+}

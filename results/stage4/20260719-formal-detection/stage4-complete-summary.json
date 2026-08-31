@@ -1,0 +1,67 @@
+{
+  "schema": "cote3-mon-stage4-complete-v1",
+  "status": "PASS",
+  "formal_dissertation_experiment": true,
+  "scope": "formal detection effectiveness and four-configuration performance overhead",
+  "checks": {
+    "qemu_detection_runs": 70,
+    "detection_scenarios": 7,
+    "stratified_complete_run_split": "PASS",
+    "percentile_and_100_tree_iforest": "PASS",
+    "aarch64_dependency_free_parity": "PASS",
+    "performance_runs": 40,
+    "performance_configurations": 4,
+    "online_iforest": "PASS",
+    "real_audit_ta_alert_anchoring": "PASS"
+  },
+  "headline_detection": {
+    "percentile_f1": 0.4043715846994536,
+    "percentile_auprc": 0.934398864796636,
+    "iforest_f1": 0.45342706502636204,
+    "iforest_auprc": 0.9575426556729474,
+    "iforest_recall": 0.2945205479452055,
+    "iforest_false_positives": 2
+  },
+  "headline_performance": {
+    "gateway_only": {
+      "throughput_rps": 364.8254672496,
+      "gateway_cpu_percent": 8.721545518169604,
+      "monitor_cpu_percent": null,
+      "inference_mean_us": null,
+      "audit_append_mean_us": null
+    },
+    "telemetry": {
+      "throughput_rps": 371.2077903041,
+      "gateway_cpu_percent": 20.16949982837085,
+      "monitor_cpu_percent": null,
+      "inference_mean_us": null,
+      "audit_append_mean_us": null
+    },
+    "telemetry_iforest": {
+      "throughput_rps": 369.4290908832,
+      "gateway_cpu_percent": 19.89199445002714,
+      "monitor_cpu_percent": 11.14907351286705,
+      "inference_mean_us": 2084.454509090909,
+      "audit_append_mean_us": 0.0
+    },
+    "telemetry_iforest_audit_ta": {
+      "throughput_rps": 363.6089379782,
+      "gateway_cpu_percent": 20.54645160344221,
+      "monitor_cpu_percent": 11.429935514689294,
+      "inference_mean_us": 2124.9569636363635,
+      "audit_append_mean_us": 650358.016609091
+    }
+  },
+  "interpretation_limits": [
+    "Detection recall remains limited, especially for replay and flood; results were not cherry-picked.",
+    "Telemetry increased gateway CPU, but no throughput penalty was observed under this QEMU workload.",
+    "QEMU timings are suitable for relative prototype comparisons, not direct hardware performance claims.",
+    "TEE anchoring protects submitted alerts but cannot prove that a compromised trusted REE did not suppress telemetry before submission."
+  ],
+  "sha256": {
+    "detection_final": "35953902caf3584ee59dece26b75bb1fdea8a18d7b2f4baa9ceacb3e59015efb",
+    "detection_metrics": "b8899a54070e04f2867652e934695a7b052c9b0d93ef42dd396a2560e7e1d166",
+    "performance_summary": "fc276cd15f067153d6e923dec6f8982d45fb7f7565576ae09431097d276b5801",
+    "performance_runs_csv": "ea25fa2c2dbc6f57dfe9ad7d71a5e798ce056251766b7b27691cd429f3ec6307"
+  }
+}

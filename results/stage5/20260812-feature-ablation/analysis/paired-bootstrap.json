@@ -1,0 +1,146 @@
+{
+  "schema": "cote3-mon-stage5-paired-bootstrap-v1",
+  "status": "PASS",
+  "iterations": 5000,
+  "seed": 42,
+  "resampling_unit": "complete run",
+  "interpretation": "Intervals crossing zero do not provide clear evidence of a positive paired difference under this sample.",
+  "comparisons": {
+    "enhanced18_minus_base12": {
+      "overall": {
+        "precision": {
+          "difference": 0.0016336532570960793,
+          "ci95": [
+            0.0,
+            0.007856341189674487
+          ]
+        },
+        "recall": {
+          "difference": 0.16400911161731208,
+          "ci95": [
+            0.0839160839160839,
+            0.2557077625570776
+          ]
+        },
+        "f1": {
+          "difference": 0.1495016611295681,
+          "ci95": [
+            0.07417971627722475,
+            0.24485519068573025
+          ]
+        },
+        "auprc": {
+          "difference": 0.01957104843550994,
+          "ci95": [
+            0.002970051684358488,
+            0.04453749393466955
+          ]
+        }
+      },
+      "replay_run_detection": {
+        "runs": 10,
+        "left_alerted_runs": 1,
+        "right_alerted_runs": 10,
+        "difference": 0.9,
+        "ci95": [
+          0.7,
+          1.0
+        ]
+      },
+      "flood_run_detection": {
+        "runs": 10,
+        "left_alerted_runs": 2,
+        "right_alerted_runs": 4,
+        "difference": 0.2,
+        "ci95": [
+          0.0,
+          0.5
+        ]
+      }
+    },
+    "temporal16_minus_base12": {
+      "overall": {
+        "precision": {
+          "difference": 0.001301891427167745,
+          "ci95": [
+            0.0,
+            0.006517874777799748
+          ]
+        },
+        "recall": {
+          "difference": 0.12072892938496588,
+          "ci95": [
+            0.04568527918781723,
+            0.21064301552106435
+          ]
+        },
+        "f1": {
+          "difference": 0.11317531496903699,
+          "ci95": [
+            0.042397229070946674,
+            0.2004200134001754
+          ]
+        },
+        "auprc": {
+          "difference": 0.01860444765979452,
+          "ci95": [
+            0.0028831429835186606,
+            0.04140258961260346
+          ]
+        }
+      },
+      "flood_run_detection": {
+        "runs": 10,
+        "left_alerted_runs": 2,
+        "right_alerted_runs": 6,
+        "difference": 0.4,
+        "ci95": [
+          0.1,
+          0.7
+        ]
+      }
+    },
+    "repetition14_minus_base12": {
+      "overall": {
+        "precision": {
+          "difference": 0.001224938753062288,
+          "ci95": [
+            0.0,
+            0.006230862351349398
+          ]
+        },
+        "recall": {
+          "difference": 0.111617312072893,
+          "ci95": [
+            0.03547671840354766,
+            0.20247933884297514
+          ]
+        },
+        "f1": {
+          "difference": 0.10526315789473684,
+          "ci95": [
+            0.03418488797271102,
+            0.19355575868372943
+          ]
+        },
+        "auprc": {
+          "difference": 0.011792464373711953,
+          "ci95": [
+            -0.00017900728812469957,
+            0.031054962449667323
+          ]
+        }
+      },
+      "replay_run_detection": {
+        "runs": 10,
+        "left_alerted_runs": 1,
+        "right_alerted_runs": 5,
+        "difference": 0.4,
+        "ci95": [
+          0.0,
+          0.8
+        ]
+      }
+    }
+  }
+}

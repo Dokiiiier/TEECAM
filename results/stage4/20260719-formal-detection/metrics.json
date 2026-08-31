@@ -1,0 +1,288 @@
+{
+  "schema": "cote3-mon-stage4-metrics-v1",
+  "scope": "stage4-formal-detection-experiment",
+  "note": "Formal 10x60-second dissertation detection results.",
+  "validation_window_alert_rate": {
+    "target": 0.01,
+    "percentile": 0.015151515151515152,
+    "iforest": 0.015151515151515152
+  },
+  "percentile": {
+    "tp": 111,
+    "fp": 0,
+    "tn": 66,
+    "fn": 327,
+    "precision": 1.0,
+    "recall": 0.2534246575342466,
+    "f1": 0.4043715846994536,
+    "false_positive_rate": 0.0,
+    "auprc": 0.934398864796636,
+    "precision_ci95": [
+      1.0,
+      1.0
+    ],
+    "recall_ci95": [
+      0.125,
+      0.39294117647058824
+    ],
+    "f1_ci95": [
+      0.2222222222222222,
+      0.5641891891891891
+    ],
+    "auprc_ci95": [
+      0.8669434551150327,
+      0.9837586623519095
+    ],
+    "false_alerts_per_hour": 0.0,
+    "threshold": 1.8467164654811086,
+    "windows": 504,
+    "runs": 46,
+    "attack_detection_delay_seconds": {
+      "error_storm-00": null,
+      "error_storm-01": null,
+      "error_storm-02": null,
+      "error_storm-03": null,
+      "error_storm-04": null,
+      "error_storm-05": null,
+      "error_storm-06": null,
+      "error_storm-07": null,
+      "error_storm-08": null,
+      "error_storm-09": null,
+      "flood-00": null,
+      "flood-01": null,
+      "flood-02": null,
+      "flood-03": null,
+      "flood-04": null,
+      "flood-05": null,
+      "flood-06": null,
+      "flood-07": null,
+      "flood-08": null,
+      "flood-09": null,
+      "malformed-00": 0.0,
+      "malformed-01": 0.0,
+      "malformed-02": 0.0,
+      "malformed-03": 0.0,
+      "malformed-04": 0.0,
+      "malformed-05": 0.0,
+      "malformed-06": 0.0,
+      "malformed-07": 0.0,
+      "malformed-08": 0.0,
+      "malformed-09": 0.0,
+      "replay-00": null,
+      "replay-01": 10.0,
+      "replay-02": null,
+      "replay-03": null,
+      "replay-04": null,
+      "replay-05": null,
+      "replay-06": null,
+      "replay-07": null,
+      "replay-08": null,
+      "replay-09": null
+    },
+    "per_scenario": {
+      "bursty": {
+        "is_attack": false,
+        "windows": 22,
+        "alert_windows": 0,
+        "window_alert_rate": 0.0,
+        "runs": 2,
+        "alerted_runs": 0,
+        "run_detection_rate": 0.0
+      },
+      "error_storm": {
+        "is_attack": true,
+        "windows": 110,
+        "alert_windows": 0,
+        "window_alert_rate": 0.0,
+        "runs": 10,
+        "alerted_runs": 0,
+        "run_detection_rate": 0.0
+      },
+      "flood": {
+        "is_attack": true,
+        "windows": 110,
+        "alert_windows": 0,
+        "window_alert_rate": 0.0,
+        "runs": 10,
+        "alerted_runs": 0,
+        "run_detection_rate": 0.0
+      },
+      "large_value": {
+        "is_attack": false,
+        "windows": 22,
+        "alert_windows": 0,
+        "window_alert_rate": 0.0,
+        "runs": 2,
+        "alerted_runs": 0,
+        "run_detection_rate": 0.0
+      },
+      "malformed": {
+        "is_attack": true,
+        "windows": 110,
+        "alert_windows": 110,
+        "window_alert_rate": 1.0,
+        "runs": 10,
+        "alerted_runs": 10,
+        "run_detection_rate": 1.0
+      },
+      "replay": {
+        "is_attack": true,
+        "windows": 108,
+        "alert_windows": 1,
+        "window_alert_rate": 0.009259259259259259,
+        "runs": 10,
+        "alerted_runs": 1,
+        "run_detection_rate": 0.1
+      },
+      "steady": {
+        "is_attack": false,
+        "windows": 22,
+        "alert_windows": 0,
+        "window_alert_rate": 0.0,
+        "runs": 2,
+        "alerted_runs": 0,
+        "run_detection_rate": 0.0
+      }
+    },
+    "detector": "percentile"
+  },
+  "iforest": {
+    "tp": 129,
+    "fp": 2,
+    "tn": 64,
+    "fn": 309,
+    "precision": 0.9847328244274809,
+    "recall": 0.2945205479452055,
+    "f1": 0.45342706502636204,
+    "false_positive_rate": 0.030303030303030304,
+    "auprc": 0.9575426556729474,
+    "precision_ci95": [
+      0.9529411764705882,
+      1.0
+    ],
+    "recall_ci95": [
+      0.17316017316017315,
+      0.4262295081967213
+    ],
+    "f1_ci95": [
+      0.29306930693069305,
+      0.5961251862891208
+    ],
+    "auprc_ci95": [
+      0.9129443082137134,
+      0.991002712838131
+    ],
+    "false_alerts_per_hour": 21.81818181818182,
+    "threshold": 0.6308670076121313,
+    "windows": 504,
+    "runs": 46,
+    "attack_detection_delay_seconds": {
+      "error_storm-00": 50.0,
+      "error_storm-01": 0.0,
+      "error_storm-02": 0.0,
+      "error_storm-03": 50.0,
+      "error_storm-04": 0.0,
+      "error_storm-05": 0.0,
+      "error_storm-06": 0.0,
+      "error_storm-07": 0.0,
+      "error_storm-08": 0.0,
+      "error_storm-09": 35.0,
+      "flood-00": 50.0,
+      "flood-01": null,
+      "flood-02": 0.0,
+      "flood-03": 50.0,
+      "flood-04": null,
+      "flood-05": 0.0,
+      "flood-06": null,
+      "flood-07": null,
+      "flood-08": 0.0,
+      "flood-09": null,
+      "malformed-00": 0.0,
+      "malformed-01": 0.0,
+      "malformed-02": 0.0,
+      "malformed-03": 0.0,
+      "malformed-04": 0.0,
+      "malformed-05": 0.0,
+      "malformed-06": 0.0,
+      "malformed-07": 0.0,
+      "malformed-08": 0.0,
+      "malformed-09": 0.0,
+      "replay-00": 0.0,
+      "replay-01": null,
+      "replay-02": null,
+      "replay-03": null,
+      "replay-04": null,
+      "replay-05": null,
+      "replay-06": null,
+      "replay-07": null,
+      "replay-08": null,
+      "replay-09": null
+    },
+    "per_scenario": {
+      "bursty": {
+        "is_attack": false,
+        "windows": 22,
+        "alert_windows": 0,
+        "window_alert_rate": 0.0,
+        "runs": 2,
+        "alerted_runs": 0,
+        "run_detection_rate": 0.0
+      },
+      "error_storm": {
+        "is_attack": true,
+        "windows": 110,
+        "alert_windows": 13,
+        "window_alert_rate": 0.11818181818181818,
+        "runs": 10,
+        "alerted_runs": 10,
+        "run_detection_rate": 1.0
+      },
+      "flood": {
+        "is_attack": true,
+        "windows": 110,
+        "alert_windows": 5,
+        "window_alert_rate": 0.045454545454545456,
+        "runs": 10,
+        "alerted_runs": 5,
+        "run_detection_rate": 0.5
+      },
+      "large_value": {
+        "is_attack": false,
+        "windows": 22,
+        "alert_windows": 1,
+        "window_alert_rate": 0.045454545454545456,
+        "runs": 2,
+        "alerted_runs": 1,
+        "run_detection_rate": 0.5
+      },
+      "malformed": {
+        "is_attack": true,
+        "windows": 110,
+        "alert_windows": 110,
+        "window_alert_rate": 1.0,
+        "runs": 10,
+        "alerted_runs": 10,
+        "run_detection_rate": 1.0
+      },
+      "replay": {
+        "is_attack": true,
+        "windows": 108,
+        "alert_windows": 1,
+        "window_alert_rate": 0.009259259259259259,
+        "runs": 10,
+        "alerted_runs": 1,
+        "run_detection_rate": 0.1
+      },
+      "steady": {
+        "is_attack": false,
+        "windows": 22,
+        "alert_windows": 1,
+        "window_alert_rate": 0.045454545454545456,
+        "runs": 2,
+        "alerted_runs": 1,
+        "run_detection_rate": 0.5
+      }
+    },
+    "detector": "iforest"
+  }
+}

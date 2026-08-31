@@ -1,0 +1,30 @@
+{
+  "schema": "cote3-mon-stage3-final-v1",
+  "status": "PASS",
+  "scope": "stage3-ai-pipeline-smoke",
+  "formal_dissertation_experiment": false,
+  "meaning": "The real QEMU telemetry-to-model pipeline and dependency-free guest inference are reproducible. Detection performance remains a smoke result, not the final thesis result.",
+  "checks": {
+    "qemu_collection_and_host_pipeline": "PASS",
+    "complete_run_split_without_leakage": "PASS",
+    "attack_data_test_only": "PASS",
+    "percentile_and_isolation_forest_models": "PASS",
+    "isolation_forest_tree_count": 100,
+    "host_export_parity": "PASS",
+    "qemu_guest_dependency_free_parity": "PASS"
+  },
+  "guest": {
+    "architecture": "aarch64",
+    "python": "3.13.3",
+    "vectors": 78,
+    "max_abs_difference": 1.1102230246251565e-16,
+    "tolerance": 1e-12
+  },
+  "sha256": {
+    "model": "ccaa1d1541a35e9e78067403efbb3d86d4c68c9c67846b14b19c7d65a13a8a07",
+    "metrics": "45a9925f402f46f0f3ba051dc5513dd77635876d768afbbbd2495988af44b24c",
+    "split_manifest": "0ff6587d7974f40219c3d93a5168c3e0cd064bc02a03976fafac690ccc6d68b5",
+    "host_summary": "5820af0f51d4d98206993221808418719d7d1e792e005bae5da26b966ffa4f54",
+    "guest_parity": "21e7b2f3f6db2faa97c924bcb39188955649989bc3a18123abc174864a3835a1"
+  }
+}

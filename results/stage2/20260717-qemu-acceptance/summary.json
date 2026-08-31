@@ -1,0 +1,12 @@
+{
+  "schema": "cote3-mon-stage2-acceptance-v1",
+  "status": "PASS",
+  "checks": [
+    "aarch64 guest and TEE devices",
+    "container TEE-device isolation",
+    "container gateway PUT/GET/DELETE",
+    "protocol rejection telemetry",
+    "audit TA receipt verification",
+    "audit modification deletion reordering forgery rejection"
+  ]
+}

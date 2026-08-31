@@ -1,0 +1,4 @@
+# Stage 3 training environment for WSL2 Ubuntu 22.04 / Python 3.10.
+# Keep these direct dependencies fixed so model export and parity can be reproduced.
+numpy==2.2.6
+scikit-learn==1.7.2

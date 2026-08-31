@@ -1,0 +1,31 @@
+{
+  "schema": "cote3-mon-stage4-final-v1",
+  "status": "PASS",
+  "stage": "stage4",
+  "scope": "stage4-formal-detection-experiment",
+  "formal_dissertation_experiment": true,
+  "meaning": "The 10x60-second formal QEMU detection experiment, run-level stratified split, model training, and dependency-free guest inference all passed acceptance.",
+  "checks": {
+    "qemu_collection_and_host_pipeline": "PASS",
+    "complete_run_split_without_leakage": "PASS",
+    "attack_data_test_only": "PASS",
+    "percentile_and_isolation_forest_models": "PASS",
+    "isolation_forest_tree_count": 100,
+    "host_export_parity": "PASS",
+    "qemu_guest_dependency_free_parity": "PASS"
+  },
+  "guest": {
+    "architecture": "aarch64",
+    "python": "3.13.3",
+    "vectors": 570,
+    "max_abs_difference": 1.6653345369377348e-16,
+    "tolerance": 1e-12
+  },
+  "sha256": {
+    "model": "ed771f0f4074fb8ec14634885cba74505ccc7fdae828de2fa67b2d764a0bafb6",
+    "metrics": "b8899a54070e04f2867652e934695a7b052c9b0d93ef42dd396a2560e7e1d166",
+    "split_manifest": "0040e363d2d22ec8e2a4ca31ec617484ed0e8603f652c1fcd73e363c93a731fa",
+    "host_summary": "8827ae9ebeff1a4fa620cf4c3a2718b4aece99b7315ad536df54fde1a67a230d",
+    "guest_parity": "b6de923cbf220739659ef1a1d0d5734e85be8ad410d13cd710919894fce4a49b"
+  }
+}

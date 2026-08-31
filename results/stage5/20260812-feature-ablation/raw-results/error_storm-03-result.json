@@ -1,0 +1,12 @@
+{
+  "schema": "cote3-mon-stage5-run-v1",
+  "status": "PASS",
+  "run_id": "error_storm-03",
+  "scenario": "error_storm",
+  "is_attack": true,
+  "seed": 45,
+  "duration_seconds": 60.0,
+  "elapsed_seconds": 61.558233105,
+  "request_events": 300,
+  "resource_events": 60
+}

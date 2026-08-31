@@ -1,0 +1,29 @@
+{
+  "schema": "cote3-mon-feature-ablation-v1",
+  "stage": "stage5",
+  "scope": "replay-flood-feature-augmentation-ablation",
+  "formal_dissertation_experiment": true,
+  "stratify_benign_scenarios": true,
+  "platform": {
+    "host": "WSL2 Ubuntu 22.04",
+    "guest": "OP-TEE QEMU v8 / Buildroot Linux",
+    "optee_version": "4.10.0",
+    "container_runtime": "runc"
+  },
+  "seed": 42,
+  "repeats_per_scenario": 10,
+  "duration_seconds": 60,
+  "warmup_seconds": 10,
+  "window_seconds": 5,
+  "target_validation_fpr": 0.01,
+  "parity_tolerance": 1e-12,
+  "benign_scenarios": ["steady", "bursty", "large_value"],
+  "attack_scenarios": ["flood", "malformed", "error_storm", "replay"],
+  "feature_sets": {
+    "base12": "original twelve Stage 4 features",
+    "temporal16": "base12 plus operation transitions and three idle-time features",
+    "repetition14": "base12 plus key and request reuse ratios",
+    "enhanced18": "base12 plus all repetition and temporal features"
+  },
+  "telemetry_privacy": "Per-gateway keyed 64-bit fingerprints support equality only; raw keys, values, and the ephemeral key are not logged."
+}

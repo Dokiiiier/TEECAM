@@ -1,0 +1,36 @@
+{
+  "schema": "cote3-mon-stage4-summary-v1",
+  "status": "PASS",
+  "stage": "stage4",
+  "scope": "stage4-formal-detection-experiment",
+  "formal_dissertation_experiment": true,
+  "experiment": {
+    "repeats_per_scenario": 10,
+    "duration_seconds": 60.0,
+    "warmup_seconds": 10,
+    "window_seconds": 5,
+    "config_sha256": "e658710296a6512d8bb17260541273d25afd904b4ac1d71b2e08101fc6d84c10"
+  },
+  "checks": [
+    "all configured QEMU runs passed",
+    "request and resource telemetry present",
+    "benign split by complete run with no leakage",
+    "every benign scenario represented in train, validation, and test",
+    "attack data used only for testing",
+    "percentile baseline exported",
+    "100-tree Isolation Forest exported",
+    "host dependency-free runtime matches scikit-learn within tolerance",
+    "detection metrics and run-level bootstrap intervals generated"
+  ],
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scikit_learn": "1.7.2"
+  },
+  "artifacts": {
+    "percentile_sha256": "3f3b7dd86c5db82a8bacccf56ec02e2f00b8e2dcc4f382cc42c3174a7c6bc08f",
+    "iforest_sha256": "ed771f0f4074fb8ec14634885cba74505ccc7fdae828de2fa67b2d764a0bafb6",
+    "features_sha256": "9e4eab8036327044ef080fcdb2e8cd5dc3051568503d72950d13df536f7f60bc",
+    "parity_vectors_sha256": "8b6921a1f100f35da50a2422eb2d6956b32a46f269fc1c7e083e9b0f08ebfbfd"
+  }
+}

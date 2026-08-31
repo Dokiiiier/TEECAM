@@ -1,0 +1,41 @@
+{
+  "schema": "cote3-mon-stage3-split-v1",
+  "seed": 42,
+  "strategy": "whole benign runs: 60% train, 20% validation, 20% test; attacks test only",
+  "train_run_ids": [
+    "large_value-00",
+    "large_value-01",
+    "steady-00",
+    "steady-01",
+    "steady-02"
+  ],
+  "validation_run_ids": [
+    "bursty-02",
+    "large_value-02"
+  ],
+  "benign_test_run_ids": [
+    "bursty-00",
+    "bursty-01"
+  ],
+  "attack_test_run_ids": [
+    "error_storm-00",
+    "error_storm-01",
+    "error_storm-02",
+    "flood-00",
+    "flood-01",
+    "flood-02",
+    "malformed-00",
+    "malformed-01",
+    "malformed-02",
+    "replay-00",
+    "replay-01",
+    "replay-02"
+  ],
+  "windows": {
+    "all": 102,
+    "train": 24,
+    "validation": 10,
+    "test": 68
+  },
+  "no_run_leakage": true
+}

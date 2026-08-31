@@ -1,0 +1,8 @@
+{
+  "schema": "cote3-mon-stage3-parity-v1",
+  "status": "PASS",
+  "vectors": 78,
+  "max_abs_difference": 1.1102230246251565e-16,
+  "tolerance": 1e-12,
+  "model_sha256": "ccaa1d1541a35e9e78067403efbb3d86d4c68c9c67846b14b19c7d65a13a8a07"
+}

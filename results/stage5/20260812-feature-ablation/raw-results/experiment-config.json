@@ -1,0 +1,38 @@
+{
+  "attack_scenarios": [
+    "flood",
+    "malformed",
+    "error_storm",
+    "replay"
+  ],
+  "benign_scenarios": [
+    "steady",
+    "bursty",
+    "large_value"
+  ],
+  "duration_seconds": 60,
+  "feature_sets": {
+    "base12": "original twelve Stage 4 features",
+    "enhanced18": "base12 plus all repetition and temporal features",
+    "repetition14": "base12 plus key and request reuse ratios",
+    "temporal16": "base12 plus operation transitions and three idle-time features"
+  },
+  "formal_dissertation_experiment": true,
+  "parity_tolerance": 1e-12,
+  "platform": {
+    "container_runtime": "runc",
+    "guest": "OP-TEE QEMU v8 / Buildroot Linux",
+    "host": "WSL2 Ubuntu 22.04",
+    "optee_version": "4.10.0"
+  },
+  "repeats_per_scenario": 10,
+  "schema": "cote3-mon-feature-ablation-v1",
+  "scope": "replay-flood-feature-augmentation-ablation",
+  "seed": 42,
+  "stage": "stage5",
+  "stratify_benign_scenarios": true,
+  "target_validation_fpr": 0.01,
+  "telemetry_privacy": "Per-gateway keyed 64-bit fingerprints support equality only; raw keys, values, and the ephemeral key are not logged.",
+  "warmup_seconds": 10,
+  "window_seconds": 5
+}

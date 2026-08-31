@@ -1,0 +1,30 @@
+{
+  "schema": "cote3-mon-stage5-guest-parity-manifest-v1",
+  "status": "PASS",
+  "feature_sets": {
+    "base12": {
+      "vectors": 570,
+      "max_abs_difference": 1.6653345369377348e-16,
+      "model_sha256": "840914acf66bf983e069c0cd3bc017c3e693bac13c4de572d582c8ed970ed45c",
+      "vectors_sha256": "644d26506f1e7d03169b6089621aaea8eec76961b5784954b95f404e95f2dacb"
+    },
+    "temporal16": {
+      "vectors": 570,
+      "max_abs_difference": 0.0,
+      "model_sha256": "df8a6e4d203400b820495b8eb1cf7873061dbaa45c1734e4bc37d909552c79b6",
+      "vectors_sha256": "03c44f63f300865a085ce9ec698c47c78c6392af0a51476967cfc21439bd0bd9"
+    },
+    "repetition14": {
+      "vectors": 570,
+      "max_abs_difference": 1.1102230246251565e-16,
+      "model_sha256": "c7dc7676cf4d004204a415075ff1d9e09761440ed760c83aae5dcb46ebdea2e0",
+      "vectors_sha256": "0895937e8527eb3d90cb06afe7954aed4b0f8db82cb03be93f5f81488b282a00"
+    },
+    "enhanced18": {
+      "vectors": 570,
+      "max_abs_difference": 1.1102230246251565e-16,
+      "model_sha256": "71473cdbee76a5994d8e1087d763c9386ed82030e215a41518f46862e7f2517a",
+      "vectors_sha256": "61469ac876930e51e3ed527efdfff22f0a65e36b6b39d96e95a10a10f8a45f0c"
+    }
+  }
+}

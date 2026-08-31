@@ -379,4 +379,3 @@ TEECAM 是研究原型，不是可直接部署的生产安全产品。
 
 项目代码采用 [MIT License](LICENSE)。安全存储接口保留了 OP-TEE examples 的部分接口定义，
 详见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
-

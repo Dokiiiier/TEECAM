@@ -1,0 +1,12 @@
+{
+  "schema": "cote3-mon-stage5-run-v1",
+  "status": "PASS",
+  "run_id": "flood-09",
+  "scenario": "flood",
+  "is_attack": true,
+  "seed": 51,
+  "duration_seconds": 60.0,
+  "elapsed_seconds": 61.432294352999634,
+  "request_events": 314,
+  "resource_events": 60
+}

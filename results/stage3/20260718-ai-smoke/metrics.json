@@ -1,0 +1,196 @@
+{
+  "schema": "cote3-mon-stage3-metrics-v1",
+  "scope": "stage3-ai-pipeline-smoke",
+  "warning": "Smoke-stage metrics validate the pipeline and are not the final 10x60-second dissertation results.",
+  "validation_window_alert_rate": {
+    "target": 0.01,
+    "percentile": 0.0,
+    "iforest": 0.1
+  },
+  "percentile": {
+    "tp": 32,
+    "fp": 5,
+    "tn": 5,
+    "fn": 26,
+    "precision": 0.8648648648648649,
+    "recall": 0.5517241379310345,
+    "f1": 0.6736842105263158,
+    "false_positive_rate": 0.5,
+    "auprc": 0.8929625268254945,
+    "precision_ci95": [
+      0.6216216216216216,
+      0.9767441860465116
+    ],
+    "recall_ci95": [
+      0.2727272727272727,
+      0.7894736842105263
+    ],
+    "f1_ci95": [
+      0.37333333333333335,
+      0.8411214953271027
+    ],
+    "auprc_ci95": [
+      0.7369352880041043,
+      0.9878790057545126
+    ],
+    "false_alerts_per_hour": 600.0,
+    "threshold": 1.0,
+    "windows": 68,
+    "runs": 14,
+    "attack_detection_delay_seconds": {
+      "error_storm-00": 0.0,
+      "error_storm-01": 0.0,
+      "error_storm-02": 0.0,
+      "flood-00": 12.0,
+      "flood-01": null,
+      "flood-02": 12.0,
+      "malformed-00": 0.0,
+      "malformed-01": 0.0,
+      "malformed-02": 0.0,
+      "replay-00": 0.0,
+      "replay-01": null,
+      "replay-02": null
+    },
+    "per_scenario": {
+      "bursty": {
+        "is_attack": false,
+        "windows": 10,
+        "alert_windows": 5,
+        "window_alert_rate": 0.5,
+        "runs": 2,
+        "alerted_runs": 2,
+        "run_detection_rate": 1.0
+      },
+      "error_storm": {
+        "is_attack": true,
+        "windows": 14,
+        "alert_windows": 14,
+        "window_alert_rate": 1.0,
+        "runs": 3,
+        "alerted_runs": 3,
+        "run_detection_rate": 1.0
+      },
+      "flood": {
+        "is_attack": true,
+        "windows": 15,
+        "alert_windows": 2,
+        "window_alert_rate": 0.13333333333333333,
+        "runs": 3,
+        "alerted_runs": 2,
+        "run_detection_rate": 0.6666666666666666
+      },
+      "malformed": {
+        "is_attack": true,
+        "windows": 15,
+        "alert_windows": 15,
+        "window_alert_rate": 1.0,
+        "runs": 3,
+        "alerted_runs": 3,
+        "run_detection_rate": 1.0
+      },
+      "replay": {
+        "is_attack": true,
+        "windows": 14,
+        "alert_windows": 1,
+        "window_alert_rate": 0.07142857142857142,
+        "runs": 3,
+        "alerted_runs": 1,
+        "run_detection_rate": 0.3333333333333333
+      }
+    },
+    "detector": "percentile"
+  },
+  "iforest": {
+    "tp": 31,
+    "fp": 5,
+    "tn": 5,
+    "fn": 27,
+    "precision": 0.8611111111111112,
+    "recall": 0.5344827586206896,
+    "f1": 0.6595744680851064,
+    "false_positive_rate": 0.5,
+    "auprc": 0.8267623332644894,
+    "precision_ci95": [
+      0.625,
+      0.975609756097561
+    ],
+    "recall_ci95": [
+      0.3103448275862069,
+      0.7538461538461538
+    ],
+    "f1_ci95": [
+      0.42666666666666664,
+      0.8148148148148149
+    ],
+    "auprc_ci95": [
+      0.608356921643257,
+      0.9393807278718311
+    ],
+    "false_alerts_per_hour": 600.0,
+    "threshold": 0.5517420195905487,
+    "windows": 68,
+    "runs": 14,
+    "attack_detection_delay_seconds": {
+      "error_storm-00": null,
+      "error_storm-01": 0.0,
+      "error_storm-02": 0.0,
+      "flood-00": 12.0,
+      "flood-01": 0.0,
+      "flood-02": 3.0,
+      "malformed-00": 0.0,
+      "malformed-01": 0.0,
+      "malformed-02": 0.0,
+      "replay-00": 0.0,
+      "replay-01": null,
+      "replay-02": null
+    },
+    "per_scenario": {
+      "bursty": {
+        "is_attack": false,
+        "windows": 10,
+        "alert_windows": 5,
+        "window_alert_rate": 0.5,
+        "runs": 2,
+        "alerted_runs": 2,
+        "run_detection_rate": 1.0
+      },
+      "error_storm": {
+        "is_attack": true,
+        "windows": 14,
+        "alert_windows": 8,
+        "window_alert_rate": 0.5714285714285714,
+        "runs": 3,
+        "alerted_runs": 2,
+        "run_detection_rate": 0.6666666666666666
+      },
+      "flood": {
+        "is_attack": true,
+        "windows": 15,
+        "alert_windows": 6,
+        "window_alert_rate": 0.4,
+        "runs": 3,
+        "alerted_runs": 3,
+        "run_detection_rate": 1.0
+      },
+      "malformed": {
+        "is_attack": true,
+        "windows": 15,
+        "alert_windows": 15,
+        "window_alert_rate": 1.0,
+        "runs": 3,
+        "alerted_runs": 3,
+        "run_detection_rate": 1.0
+      },
+      "replay": {
+        "is_attack": true,
+        "windows": 14,
+        "alert_windows": 2,
+        "window_alert_rate": 0.14285714285714285,
+        "runs": 3,
+        "alerted_runs": 1,
+        "run_detection_rate": 0.3333333333333333
+      }
+    },
+    "detector": "iforest"
+  }
+}

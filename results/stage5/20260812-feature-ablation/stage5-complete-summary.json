@@ -1,0 +1,127 @@
+{
+  "schema": "cote3-mon-stage5-complete-v1",
+  "status": "PASS",
+  "formal_dissertation_experiment": true,
+  "scope": "Replay and flooding feature-augmentation ablation on OP-TEE QEMU",
+  "checks": {
+    "qemu_runs": 70,
+    "scenarios": 7,
+    "complete_run_split": "PASS",
+    "raw_key_value_absence": "PASS",
+    "feature_sets": 4,
+    "aarch64_guest_parity": "PASS",
+    "paired_run_bootstrap": "PASS",
+    "guest_inference_benchmark": "PASS"
+  },
+  "headline_metrics": {
+    "base12": {
+      "precision": 0.9943502824858758,
+      "recall": 0.4009111617312073,
+      "f1": 0.5714285714285714,
+      "auprc": 0.9768919057700697,
+      "false_positives": 1,
+      "flood_alerted_runs": 2,
+      "replay_alerted_runs": 1,
+      "guest_mean_inference_us": 2224.7795777192982
+    },
+    "temporal16": {
+      "precision": 0.9956521739130435,
+      "recall": 0.5216400911161732,
+      "f1": 0.6846038863976084,
+      "auprc": 0.9954963534298642,
+      "false_positives": 1,
+      "flood_alerted_runs": 6,
+      "replay_alerted_runs": 3,
+      "guest_mean_inference_us": 2168.21769
+    },
+    "repetition14": {
+      "precision": 0.995575221238938,
+      "recall": 0.5125284738041003,
+      "f1": 0.6766917293233082,
+      "auprc": 0.9886843701437816,
+      "false_positives": 1,
+      "flood_alerted_runs": 0,
+      "replay_alerted_runs": 5,
+      "guest_mean_inference_us": 2150.431295614035
+    },
+    "enhanced18": {
+      "precision": 0.9959839357429718,
+      "recall": 0.5649202733485194,
+      "f1": 0.7209302325581395,
+      "auprc": 0.9964629542055796,
+      "false_positives": 1,
+      "flood_alerted_runs": 4,
+      "replay_alerted_runs": 10,
+      "guest_mean_inference_us": 2094.254705438597
+    }
+  },
+  "paired_enhanced18_minus_base12": {
+    "overall": {
+      "precision": {
+        "difference": 0.0016336532570960793,
+        "ci95": [
+          0.0,
+          0.007856341189674487
+        ]
+      },
+      "recall": {
+        "difference": 0.16400911161731208,
+        "ci95": [
+          0.0839160839160839,
+          0.2557077625570776
+        ]
+      },
+      "f1": {
+        "difference": 0.1495016611295681,
+        "ci95": [
+          0.07417971627722475,
+          0.24485519068573025
+        ]
+      },
+      "auprc": {
+        "difference": 0.01957104843550994,
+        "ci95": [
+          0.002970051684358488,
+          0.04453749393466955
+        ]
+      }
+    },
+    "replay_run_detection": {
+      "runs": 10,
+      "left_alerted_runs": 1,
+      "right_alerted_runs": 10,
+      "difference": 0.9,
+      "ci95": [
+        0.7,
+        1.0
+      ]
+    },
+    "flood_run_detection": {
+      "runs": 10,
+      "left_alerted_runs": 2,
+      "right_alerted_runs": 4,
+      "difference": 0.2,
+      "ci95": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "interpretation": [
+    "Enhanced18 improved overall recall, F1, and AUPRC without adding test-set false positives relative to Base12.",
+    "Replay run-level detection improved from 1/10 to 10/10; its paired bootstrap interval excluded zero.",
+    "Flood improved from 2/10 to 4/10 in Enhanced18, while Temporal16 achieved 6/10, showing an attack-specific feature trade-off.",
+    "Feature augmentation did not increase measured guest inference time; the small reversed timing differences are treated as QEMU/runtime noise, not acceleration.",
+    "The experiment supports semantic feature engineering, not a claim that additional features always improve every attack class."
+  ],
+  "sha256": {
+    "feature_ablation_results": "0d7f2220da96e54998fe64ca9f8401f7dbcf49edd185b506f1812ad5de8e6987",
+    "paired_bootstrap": "17fbee0e6669c002812fed1a5075cb1c6bc7653cc13be487e35a34c9cda914ea",
+    "guest_inference_benchmark": "a0f35e28d0fb91d8cd2d1f5400469b30b70633c18924ecf55708381f762e3904",
+    "guest_parity_manifest": "1c41a3f6a63b8ec4a3f61695a2594609590e5f194e113aea22ae1b8214f21925",
+    "parity_guest_base12": "89dab1ed4c02b25afd6c7ab33103e164772726363ade639e57fffd939421c108",
+    "parity_guest_temporal16": "1492ef87c28968a2fc0428f1348ef066d0a31bb5aa493e074283fac03937c7f6",
+    "parity_guest_repetition14": "a936e6d2a8f0580a0dcd331b8e8b9403ec4016ca47137050a2be2b0fb889cb3e",
+    "parity_guest_enhanced18": "8c9822ea0c8bb21805985990d80959f446266b8d220516449d78605f78ddf587"
+  }
+}

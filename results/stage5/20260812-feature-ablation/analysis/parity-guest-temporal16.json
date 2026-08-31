@@ -1,0 +1,13 @@
+{
+  "schema": "cote3-mon-stage5-temporal16-guest-parity-v1",
+  "status": "PASS",
+  "architecture": "aarch64",
+  "python": "3.13.3",
+  "vectors": 570,
+  "max_abs_difference": 0.0,
+  "elapsed_seconds": 1.23956045,
+  "mean_inference_us": 2174.667456140351,
+  "tolerance": 1e-12,
+  "model_sha256": "df8a6e4d203400b820495b8eb1cf7873061dbaa45c1734e4bc37d909552c79b6",
+  "dependencies": "Python standard library and cote3mon.iforest_runtime only"
+}

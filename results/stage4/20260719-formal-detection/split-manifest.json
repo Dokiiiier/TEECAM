@@ -1,0 +1,113 @@
+{
+  "schema": "cote3-mon-stage4-split-v1",
+  "seed": 42,
+  "strategy": "stratified by benign scenario, then complete runs: 60% train, 20% validation, 20% test; attacks test only",
+  "train_run_ids": [
+    "bursty-01",
+    "bursty-02",
+    "bursty-03",
+    "bursty-05",
+    "bursty-08",
+    "bursty-09",
+    "large_value-00",
+    "large_value-01",
+    "large_value-03",
+    "large_value-05",
+    "large_value-07",
+    "large_value-09",
+    "steady-00",
+    "steady-01",
+    "steady-04",
+    "steady-05",
+    "steady-06",
+    "steady-09"
+  ],
+  "validation_run_ids": [
+    "bursty-06",
+    "bursty-07",
+    "large_value-06",
+    "large_value-08",
+    "steady-07",
+    "steady-08"
+  ],
+  "benign_test_run_ids": [
+    "bursty-00",
+    "bursty-04",
+    "large_value-02",
+    "large_value-04",
+    "steady-02",
+    "steady-03"
+  ],
+  "attack_test_run_ids": [
+    "error_storm-00",
+    "error_storm-01",
+    "error_storm-02",
+    "error_storm-03",
+    "error_storm-04",
+    "error_storm-05",
+    "error_storm-06",
+    "error_storm-07",
+    "error_storm-08",
+    "error_storm-09",
+    "flood-00",
+    "flood-01",
+    "flood-02",
+    "flood-03",
+    "flood-04",
+    "flood-05",
+    "flood-06",
+    "flood-07",
+    "flood-08",
+    "flood-09",
+    "malformed-00",
+    "malformed-01",
+    "malformed-02",
+    "malformed-03",
+    "malformed-04",
+    "malformed-05",
+    "malformed-06",
+    "malformed-07",
+    "malformed-08",
+    "malformed-09",
+    "replay-00",
+    "replay-01",
+    "replay-02",
+    "replay-03",
+    "replay-04",
+    "replay-05",
+    "replay-06",
+    "replay-07",
+    "replay-08",
+    "replay-09"
+  ],
+  "windows": {
+    "all": 768,
+    "train": 198,
+    "validation": 66,
+    "test": 504
+  },
+  "scenario_run_counts": {
+    "train": {
+      "bursty": 6,
+      "large_value": 6,
+      "steady": 6
+    },
+    "validation": {
+      "bursty": 2,
+      "large_value": 2,
+      "steady": 2
+    },
+    "benign_test": {
+      "bursty": 2,
+      "large_value": 2,
+      "steady": 2
+    },
+    "attack_test": {
+      "error_storm": 10,
+      "flood": 10,
+      "malformed": 10,
+      "replay": 10
+    }
+  },
+  "no_run_leakage": true
+}

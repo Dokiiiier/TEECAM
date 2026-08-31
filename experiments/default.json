@@ -1,0 +1,24 @@
+{
+  "schema": "cote3-mon-experiment-v1",
+  "platform": {
+    "host": "WSL2 Ubuntu 22.04",
+    "guest": "OP-TEE QEMU v8 / Buildroot Linux",
+    "optee_version": "4.10.0",
+    "container_runtime": "runc"
+  },
+  "seed": 42,
+  "repeats_per_scenario": 10,
+  "duration_seconds": 60,
+  "warmup_seconds": 10,
+  "window_seconds": 5,
+  "target_validation_fpr": 0.01,
+  "benign_scenarios": ["steady", "bursty", "large_value"],
+  "attack_scenarios": ["flood", "malformed", "error_storm", "replay"],
+  "configurations": [
+    "gateway_only",
+    "telemetry",
+    "telemetry_iforest",
+    "telemetry_iforest_audit_ta"
+  ]
+}
+

@@ -1,0 +1,715 @@
+{
+  "schema": "cote3-mon-stage4-performance-summary-v1",
+  "status": "PASS",
+  "scope": "stage4-formal-performance-overhead",
+  "formal_dissertation_experiment": true,
+  "method": {
+    "scenario": "malformed",
+    "repeats_per_configuration": 10,
+    "duration_seconds": 60,
+    "randomized_execution_order": true,
+    "paired_comparison": "same repeat number and seed across configurations",
+    "bootstrap_iterations": 5000,
+    "gateway_latency_boundary": "backend/protocol handling through response send; JSONL flush is excluded from the per-request latency timestamp but included in observed throughput and CPU",
+    "audit_interpretation": "malformed was selected because the formal detector alerted on every malformed window; this measures a controlled worst-case alert anchoring workload"
+  },
+  "per_configuration": {
+    "gateway_only": {
+      "runs": 10,
+      "total_requests": 218887,
+      "total_alerts": 0,
+      "metrics": {
+        "throughput_rps": {
+          "mean": 364.8254672496,
+          "ci95": [
+            363.1562363486,
+            366.410846223
+          ],
+          "n": 10
+        },
+        "latency_p50_us": {
+          "mean": 35.5192,
+          "ci95": [
+            35.0176,
+            36.00855
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": 219.322835,
+          "ci95": [
+            210.15774000000002,
+            228.54677500000003
+          ],
+          "n": 10
+        },
+        "latency_p99_us": {
+          "mean": 794.344644,
+          "ci95": [
+            748.976868,
+            855.056112
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 8.721545518169604,
+          "ci95": [
+            8.6187604026189,
+            8.821232625820686
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 1447.8,
+          "ci95": [
+            1445.7666666666667,
+            1449.76
+          ],
+          "n": 10
+        },
+        "container_cpu_percent": {
+          "mean": 12.860346451083956,
+          "ci95": [
+            12.683323171821268,
+            13.029412697135971
+          ],
+          "n": 10
+        },
+        "container_rss_kb": {
+          "mean": 1148.8,
+          "ci95": [
+            1145.6,
+            1151.2
+          ],
+          "n": 10
+        },
+        "monitor_cpu_percent": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "monitor_rss_kb": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "inference_mean_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "inference_p95_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "audit_register_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "audit_append_mean_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "audit_append_p95_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        }
+      }
+    },
+    "telemetry": {
+      "runs": 10,
+      "total_requests": 222719,
+      "total_alerts": 0,
+      "metrics": {
+        "throughput_rps": {
+          "mean": 371.2077903041,
+          "ci95": [
+            369.16570333569996,
+            373.2526647185
+          ],
+          "n": 10
+        },
+        "latency_p50_us": {
+          "mean": 34.339749999999995,
+          "ci95": [
+            33.92845,
+            34.7853
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": 158.823785,
+          "ci95": [
+            149.41601,
+            168.365805
+          ],
+          "n": 10
+        },
+        "latency_p99_us": {
+          "mean": 674.31224,
+          "ci95": [
+            645.2471250000001,
+            704.728644
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 20.16949982837085,
+          "ci95": [
+            19.91000330695072,
+            20.443986228284945
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 1463.5333333333333,
+          "ci95": [
+            1460.0866666666666,
+            1466.3866666666668
+          ],
+          "n": 10
+        },
+        "container_cpu_percent": {
+          "mean": 12.44667037468758,
+          "ci95": [
+            12.279525866690715,
+            12.615329212183468
+          ],
+          "n": 10
+        },
+        "container_rss_kb": {
+          "mean": 1148.4,
+          "ci95": [
+            1144.8,
+            1151.2
+          ],
+          "n": 10
+        },
+        "monitor_cpu_percent": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "monitor_rss_kb": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "inference_mean_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "inference_p95_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "audit_register_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "audit_append_mean_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        },
+        "audit_append_p95_us": {
+          "mean": null,
+          "ci95": [
+            null,
+            null
+          ],
+          "n": 0
+        }
+      }
+    },
+    "telemetry_iforest": {
+      "runs": 10,
+      "total_requests": 221654,
+      "total_alerts": 110,
+      "metrics": {
+        "throughput_rps": {
+          "mean": 369.4290908832,
+          "ci95": [
+            367.4395432956,
+            371.279867351
+          ],
+          "n": 10
+        },
+        "latency_p50_us": {
+          "mean": 33.842400000000005,
+          "ci95": [
+            33.374700000000004,
+            34.318
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": 144.496075,
+          "ci95": [
+            138.804665,
+            150.330105
+          ],
+          "n": 10
+        },
+        "latency_p99_us": {
+          "mean": 644.0179850000001,
+          "ci95": [
+            618.56078,
+            671.325439
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 19.89199445002714,
+          "ci95": [
+            19.630216061047584,
+            20.182662220267677
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 1462.061694915254,
+          "ci95": [
+            1458.6648587570621,
+            1465.0964971751414
+          ],
+          "n": 10
+        },
+        "container_cpu_percent": {
+          "mean": 12.480861993883929,
+          "ci95": [
+            12.335937063205574,
+            12.636961445631673
+          ],
+          "n": 10
+        },
+        "container_rss_kb": {
+          "mean": 1146.8,
+          "ci95": [
+            1142.0,
+            1151.2
+          ],
+          "n": 10
+        },
+        "monitor_cpu_percent": {
+          "mean": 11.14907351286705,
+          "ci95": [
+            11.011983287760145,
+            11.305474097582607
+          ],
+          "n": 10
+        },
+        "monitor_rss_kb": {
+          "mean": 30094.367457627122,
+          "ci95": [
+            29915.711525423732,
+            30276.255706214688
+          ],
+          "n": 10
+        },
+        "inference_mean_us": {
+          "mean": 2084.454509090909,
+          "ci95": [
+            2008.7493,
+            2168.5705181818184
+          ],
+          "n": 10
+        },
+        "inference_p95_us": {
+          "mean": 3010.251,
+          "ci95": [
+            2684.27385,
+            3384.5354500000003
+          ],
+          "n": 10
+        },
+        "audit_register_us": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 10
+        },
+        "audit_append_mean_us": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 10
+        },
+        "audit_append_p95_us": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 10
+        }
+      }
+    },
+    "telemetry_iforest_audit_ta": {
+      "runs": 10,
+      "total_requests": 218160,
+      "total_alerts": 110,
+      "metrics": {
+        "throughput_rps": {
+          "mean": 363.6089379782,
+          "ci95": [
+            362.4782135532,
+            364.930387688
+          ],
+          "n": 10
+        },
+        "latency_p50_us": {
+          "mean": 34.300200000000004,
+          "ci95": [
+            33.9162,
+            34.7637
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": 148.21691,
+          "ci95": [
+            142.24349,
+            154.87427499999998
+          ],
+          "n": 10
+        },
+        "latency_p99_us": {
+          "mean": 695.893793,
+          "ci95": [
+            677.536729,
+            719.252646
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 20.54645160344221,
+          "ci95": [
+            20.341110566358687,
+            20.767825055325783
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 1462.0694915254237,
+          "ci95": [
+            1458.2525423728814,
+            1465.042372881356
+          ],
+          "n": 10
+        },
+        "container_cpu_percent": {
+          "mean": 12.738141808557982,
+          "ci95": [
+            12.652830367874921,
+            12.831468418927283
+          ],
+          "n": 10
+        },
+        "container_rss_kb": {
+          "mean": 1150.4,
+          "ci95": [
+            1148.0,
+            1152.0
+          ],
+          "n": 10
+        },
+        "monitor_cpu_percent": {
+          "mean": 11.429935514689294,
+          "ci95": [
+            11.203507853012066,
+            11.64265637392645
+          ],
+          "n": 10
+        },
+        "monitor_rss_kb": {
+          "mean": 30133.77593220339,
+          "ci95": [
+            30005.35593220339,
+            30262.04644067797
+          ],
+          "n": 10
+        },
+        "inference_mean_us": {
+          "mean": 2124.9569636363635,
+          "ci95": [
+            2022.9693363636366,
+            2225.888490909091
+          ],
+          "n": 10
+        },
+        "inference_p95_us": {
+          "mean": 2869.50105,
+          "ci95": [
+            2568.6736,
+            3187.5131499999998
+          ],
+          "n": 10
+        },
+        "audit_register_us": {
+          "mean": 743635.8001,
+          "ci95": [
+            680221.9316,
+            813312.0425
+          ],
+          "n": 10
+        },
+        "audit_append_mean_us": {
+          "mean": 650358.016609091,
+          "ci95": [
+            636061.5130272728,
+            666471.6242272727
+          ],
+          "n": 10
+        },
+        "audit_append_p95_us": {
+          "mean": 791043.7726499999,
+          "ci95": [
+            743243.3709000001,
+            841201.1116000001
+          ],
+          "n": 10
+        }
+      }
+    }
+  },
+  "overhead": {
+    "gateway_only": {
+      "percent_change_vs_gateway_only": {
+        "throughput_rps": 0.0,
+        "latency_p95_us": 0.0,
+        "gateway_cpu_percent": 0.0,
+        "gateway_rss_kb": 0.0
+      },
+      "percent_change_vs_previous_configuration": {},
+      "paired_percent_change_vs_gateway_only": {
+        "throughput_rps": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 10
+        }
+      }
+    },
+    "telemetry": {
+      "percent_change_vs_gateway_only": {
+        "throughput_rps": 1.7494181814158904,
+        "latency_p95_us": -27.5844738191534,
+        "gateway_cpu_percent": 131.26061529291698,
+        "gateway_rss_kb": 1.0867062669797865
+      },
+      "percent_change_vs_previous_configuration": {
+        "throughput_rps": 1.7494181814158904,
+        "latency_p95_us": -27.5844738191534,
+        "gateway_cpu_percent": 131.26061529291698,
+        "gateway_rss_kb": 1.0867062669797865
+      },
+      "paired_percent_change_vs_gateway_only": {
+        "throughput_rps": {
+          "mean": 1.7551463350102394,
+          "ci95": [
+            1.0026159602958535,
+            2.4682928021515496
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": -27.238360264362086,
+          "ci95": [
+            -32.46256536988723,
+            -21.540323173522193
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 131.335308800358,
+          "ci95": [
+            127.44534338476554,
+            135.30822532553066
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 1.0874343276604832,
+          "ci95": [
+            0.7716448749677325,
+            1.3359643910981365
+          ],
+          "n": 10
+        }
+      }
+    },
+    "telemetry_iforest": {
+      "percent_change_vs_gateway_only": {
+        "throughput_rps": 1.2618701397976524,
+        "latency_p95_us": -34.11717708281493,
+        "gateway_cpu_percent": 128.07877810860623,
+        "gateway_rss_kb": 0.9850597399678209
+      },
+      "percent_change_vs_previous_configuration": {
+        "throughput_rps": -0.4791654343899597,
+        "latency_p95_us": -9.021136223393743,
+        "gateway_cpu_percent": -1.3758664354847463,
+        "gateway_rss_kb": -0.10055380253809758
+      },
+      "paired_percent_change_vs_gateway_only": {
+        "throughput_rps": {
+          "mean": 1.2655173968261135,
+          "ci95": [
+            0.6452340839103259,
+            1.809274497601405
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": -33.88292678147794,
+          "ci95": [
+            -37.18526476101983,
+            -30.33763948118583
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 128.1197217127762,
+          "ci95": [
+            124.96172790938117,
+            131.55529657393123
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 0.9857010170397034,
+          "ci95": [
+            0.7009743542786113,
+            1.265505860782474
+          ],
+          "n": 10
+        }
+      }
+    },
+    "telemetry_iforest_audit_ta": {
+      "percent_change_vs_gateway_only": {
+        "throughput_rps": -0.3334551396785346,
+        "latency_p95_us": -32.42066654846951,
+        "gateway_cpu_percent": 135.58269071276152,
+        "gateway_rss_kb": 0.9855982542770926
+      },
+      "percent_change_vs_previous_configuration": {
+        "throughput_rps": -1.5754452068421723,
+        "latency_p95_us": 2.5750422632587235,
+        "gateway_cpu_percent": 3.2900529660774005,
+        "gateway_rss_kb": 0.0005332613662439635
+      },
+      "paired_percent_change_vs_gateway_only": {
+        "throughput_rps": {
+          "mean": -0.32624809792874776,
+          "ci95": [
+            -0.930978706807587,
+            0.4176408588852233
+          ],
+          "n": 10
+        },
+        "latency_p95_us": {
+          "mean": -32.097070419432825,
+          "ci95": [
+            -36.41084495789793,
+            -28.488878913471023
+          ],
+          "n": 10
+        },
+        "gateway_cpu_percent": {
+          "mean": 135.65449547573252,
+          "ci95": [
+            132.29221074706822,
+            138.95033742039678
+          ],
+          "n": 10
+        },
+        "gateway_rss_kb": {
+          "mean": 0.9862605135896676,
+          "ci95": [
+            0.6815848180119983,
+            1.279646489759192
+          ],
+          "n": 10
+        }
+      }
+    }
+  }
+}

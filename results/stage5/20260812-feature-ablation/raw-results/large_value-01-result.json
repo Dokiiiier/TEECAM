@@ -1,0 +1,12 @@
+{
+  "schema": "cote3-mon-stage5-run-v1",
+  "status": "PASS",
+  "run_id": "large_value-01",
+  "scenario": "large_value",
+  "is_attack": false,
+  "seed": 43,
+  "duration_seconds": 60.0,
+  "elapsed_seconds": 61.383727288000046,
+  "request_events": 275,
+  "resource_events": 60
+}

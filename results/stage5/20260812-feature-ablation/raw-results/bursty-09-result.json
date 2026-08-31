@@ -1,0 +1,12 @@
+{
+  "schema": "cote3-mon-stage5-run-v1",
+  "status": "PASS",
+  "run_id": "bursty-09",
+  "scenario": "bursty",
+  "is_attack": false,
+  "seed": 51,
+  "duration_seconds": 60.0,
+  "elapsed_seconds": 61.543751431000146,
+  "request_events": 293,
+  "resource_events": 60
+}
