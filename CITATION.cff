@@ -7,6 +7,7 @@ authors:
     given-names: Shenchenyang
 version: 1.0.0
 date-released: "2026-09-01"
+doi: "10.5281/zenodo.22234396"
 license: MIT
 repository-code: "https://github.com/Dokiiiier/TEECAM"
 url: "https://github.com/Dokiiiier/TEECAM"

@@ -2,6 +2,8 @@
 
 **Trusted Execution and Edge Container Anomaly Monitor**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22234395.svg)](https://doi.org/10.5281/zenodo.22234395)
+
 > Internal compatibility name: **COTE3-Mon**. Existing executable names,
 > Python package names, environment variables and JSON schemas retain the
 > historical `cote3`/`cote3mon` names for reproducibility.
@@ -246,9 +248,15 @@ TEECAM is a research prototype, not a production security product.
 ### Citation
 
 If you use TEECAM in academic work, please cite the version-specific Zenodo
-record. Machine-readable citation metadata is provided in
-[`CITATION.cff`](CITATION.cff). The DOI-backed citation will be added here
-after the first public release is archived.
+record:
+
+> Zheng, S. (2026). *TEECAM: Trusted Execution and Edge Container Anomaly
+> Monitor* (Version v1.0.0) [Computer software]. Zenodo.
+> https://doi.org/10.5281/zenodo.22234396
+
+Machine-readable citation metadata is provided in
+[`CITATION.cff`](CITATION.cff). To cite all current and future versions, use
+the concept DOI: https://doi.org/10.5281/zenodo.22234395.
 
 ### Licensing and attribution
 
@@ -384,8 +392,14 @@ TEECAM 是研究原型，不是可直接部署的生产安全产品。
 
 ### 引用
 
-如在学术工作中使用 TEECAM，请引用 Zenodo 上对应版本的记录。机器可读的引用元数据见
-[`CITATION.cff`](CITATION.cff)；首个公开版本完成归档后，将在此补充带 DOI 的正式引用。
+如在学术工作中使用 TEECAM，请引用 Zenodo 上对应版本的记录：
+
+> Zheng, S. (2026). *TEECAM: Trusted Execution and Edge Container Anomaly
+> Monitor* (Version v1.0.0) [Computer software]. Zenodo.
+> https://doi.org/10.5281/zenodo.22234396
+
+机器可读的引用元数据见 [`CITATION.cff`](CITATION.cff)。如需引用包含当前及未来版本的
+项目整体，请使用概念 DOI：https://doi.org/10.5281/zenodo.22234395。
 
 ### 许可证与归属
 
