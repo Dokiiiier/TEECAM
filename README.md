@@ -399,7 +399,7 @@ TEECAM 是研究原型，不是可直接部署的生产安全产品。
 > https://doi.org/10.5281/zenodo.22234396
 
 机器可读的引用元数据见 [`CITATION.cff`](CITATION.cff)。如需引用包含当前及未来版本的
-项目整体，请使用概念 DOI：https://doi.org/10.5281/zenodo.22234395。
+项目整体，请使用概念 DOI：[10.5281/zenodo.22234395](https://doi.org/10.5281/zenodo.22234395)。
 
 ### 许可证与归属
 
