@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the version-specific Zenodo record."
+title: "TEECAM: Trusted Execution and Edge Container Anomaly Monitor"
+type: software
+authors:
+  - family-names: Zheng
+    given-names: Shenchenyang
+version: 1.0.0
+date-released: "2026-09-01"
+license: MIT
+repository-code: "https://github.com/Dokiiiier/TEECAM"
+url: "https://github.com/Dokiiiier/TEECAM"
+abstract: >-
+  TEECAM is a reproducible research prototype for security monitoring in
+  containerised edge systems. It combines a narrow gateway to OP-TEE secure
+  storage, window-based anomaly detection using percentile and Isolation
+  Forest models, and an OP-TEE audit Trusted Application that issues
+  HMAC-protected receipts for submitted alert digests.
+keywords:
+  - trusted execution environment
+  - OP-TEE
+  - container security
+  - anomaly detection
+  - Isolation Forest
+  - tamper-evident audit

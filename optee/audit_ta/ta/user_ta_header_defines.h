@@ -8,7 +8,6 @@
 #define TA_STACK_SIZE (4 * 1024)
 #define TA_DATA_SIZE (32 * 1024)
 #define TA_DESCRIPTION "COTE3-Mon audit receipt chain"
-#define TA_VERSION "0.1.0"
+#define TA_VERSION "1.0.0"
 
 #endif
-

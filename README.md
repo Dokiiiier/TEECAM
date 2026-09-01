@@ -243,6 +243,13 @@ TEECAM is a research prototype, not a production security product.
 - Caller authentication, rate limiting, trusted collection, remote attestation
   and production-hardware validation remain future work.
 
+### Citation
+
+If you use TEECAM in academic work, please cite the version-specific Zenodo
+record. Machine-readable citation metadata is provided in
+[`CITATION.cff`](CITATION.cff). The DOI-backed citation will be added here
+after the first public release is archived.
+
 ### Licensing and attribution
 
 Project code is provided under the [MIT License](LICENSE). The secure-storage
@@ -374,6 +381,11 @@ TEECAM 是研究原型，不是可直接部署的生产安全产品。
 - QEMU、WSL2 调度、合成流量与较短的良性数据限制结果泛化；
 - Isolation Forest 独立评分每个窗口，不具备跨窗口序列建模能力；
 - 调用者认证、限速、可信采集、远程证明与真实 Arm 硬件验证属于后续工作。
+
+### 引用
+
+如在学术工作中使用 TEECAM，请引用 Zenodo 上对应版本的记录。机器可读的引用元数据见
+[`CITATION.cff`](CITATION.cff)；首个公开版本完成归档后，将在此补充带 DOI 的正式引用。
 
 ### 许可证与归属
 

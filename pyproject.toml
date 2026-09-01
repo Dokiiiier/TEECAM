@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cote3-mon"
-version = "0.1.0"
+version = "1.0.0"
 description = "TEE-gateway-mediated anomaly detection and tamper-evident alerting for containerised edge workloads"
 readme = "README.md"
 requires-python = ">=3.10"
